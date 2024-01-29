@@ -1,0 +1,23 @@
+{
+  "name": "finc-nodejs",
+  "version": "1.0.0",
+  "description": "Aplicação para gerenciar as finanças",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage ",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Caio Souza",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2"
+  }
+}
