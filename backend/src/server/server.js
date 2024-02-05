@@ -1,18 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import router from '../router/index.js';
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+app.use('/api', router);
 
-app.post('/login', (req, res) => {
-    console.log(req.body);
-    res.send('Login Successful!');
-});
 
 export default app;
